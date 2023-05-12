@@ -24,6 +24,7 @@ public class Main {
         for (Integer number:
                 numbers) {
             lookingForAverage += number;
+            average = lookingForAverage / numbers.size();
             if (number < min) {
                 min = number;
             }
@@ -31,7 +32,6 @@ public class Main {
                 max = number;
             }
         }
-        average = lookingForAverage / numbers.size();
         System.out.printf("Min element in ArrayList: %d", min);
         System.out.printf("\nMax element in ArrayList: %d", max);
         System.out.printf("\nAverage value of elements in ArrayList: %.1f", average);
